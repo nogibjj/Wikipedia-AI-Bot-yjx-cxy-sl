@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WikiChat Bot</title>
+    <style>
+      body {
+        background-color: #F5F5F5;
+      }
+
+      .chatbox {
+        margin: 0 auto;
+        max-width: 800px;
+        background-color: white;
+        box-shadow: 2px 2px 5px #888888;
+        border-radius: 5px;
+        overflow: hidden;
+      }
+
+      .chat-header {
+        padding: 20px;
+        background-color: #A0C9F2;
+        color: white;
+        font-size: 24px;
+        text-align: center;
+      }
+
+      .chat-log {
+        height: 400px;
+        padding: 20px;
+        overflow-y: scroll;
+      }
+
+      .chat-message {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px;
+        padding: 10px;
+        background-color: #F2F2F2;
+        border-radius: 5px;
+      }
+
+      .chat-message p {
+        margin: 0;
+        font-size: 16px;
+      }
+
+      .chat-message.user {
+        justify-content: flex-end;
+      }
+
+      .chat-message.bot {
+        justify-content: flex-start;
+      }
+
+      .chat-input {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        border-top: 1px solid #EAEAEA;
+      }
+
+      .chat-input input[type="text"] {
+        flex: 1;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        margin-right: 10px;
+        font-size: 16px;
+      }
+
+      .chat-input input[type="submit"] {
+        background-color: #0B90E1;
+        color: white;
+        border-radius: 5px;
+        border: none;
+        padding: 10px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="chatbox">
+      <div class="chat-header">
+        <h1>WikiChat Bot</h1>
+      </div>
+      <div class="chat-log" id="chat-log"></div>
+      <div class="chat-input">
+        <input type="text" id="message-input" placeholder="Type your message...">
+        <input type="submit" value="Send" id="send-button">
+      </div>
+    </div>
+    <script>
+      const chatLog = document.getElementById('chat-log');
+      const messageInput = document.getElementById('message-input');
+      const sendButton = document.getElementById('send-button');
+
+      sendButton.addEventListener('click', () => {
+        const message = messageInput.value;
+
+        if (message.trim() === '') {
+          return;
+        }
+
+        const messageNode = createMessageNode(message, 'user');
+        chatLog.appendChild(messageNode);
+
+        fetch('/message', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ message: message })
+        })
+          .then(response => response.json())
+          .then(data => {
+            const response = data.response;
+            const responseNode = createMessageNode(response, 'bot');
+            chatLog.appendChild(responseNode);
+            chatLog.scrollTop = chatLog.scrollHeight;
+          })
+          .catch(error => console.error(error));
+
+        messageInput.value = '';
+      });
+
+      function createMessageNode(message, className) {
+    const messageNode = document.createElement('div');
+    messageNode.classList.add('chat-message', className);
+
+    const messageContent = document.createElement('p');
+    messageContent.innerText = message;
+
+    messageNode.appendChild(messageContent);
+
+    return messageNode;
+  }
+</script>
