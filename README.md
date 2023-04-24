@@ -10,7 +10,24 @@
 
 
 ## How to Use
+1. Save each file to a directory on your computer. You can save them to the same directory or to different directories, depending on your preference.
 
+2. Open a command prompt or terminal window and navigate to the directory where you saved the files using the cd command. For example, if you saved the files to a directory called "wiki-bot" on your desktop, you could navigate to that directory using the command cd ~/Desktop/wiki-bot on a Mac/Linux or cd C:\Users\YourUserName\Desktop\wiki-bot on Windows.
+
+3. Install the required Python modules. The four Python files require different modules, so you will need to install them separately. You can install the required modules using the following commands:
+
+```
+`pip install wikipedia`
+`pip install Flask requests`
+`pip install Flask wikipedia`
+`pip install Flask requests`
+```
+
+4. Run the Python files. You can run each Python file by typing python filename.py in the command prompt or terminal window. For example, to run wiki.py, you would type python wiki.py and press Enter. This will start the program, and you will be prompted to enter a search query.
+
+55. Follow the instructions for each program. Each program has its own interface and set of instructions, so follow the prompts and enter the required information. If you encounter any errors or issues, refer to the error messages or consult the documentation for the program.
+
+6. To exit a program, enter the appropriate command. For example, in wiki.py, you can type "exit" to exit the program, and in the Flask applications (app.py, chat.py, and search.py), you can close the web browser or press Ctrl+C in the terminal window to stop the program.
 
 <img width="859" alt="Screen Shot 2023-04-23 at 7 48 58 PM" src="https://user-images.githubusercontent.com/112274822/233873998-0bb48a06-2bc3-4085-bfc7-7511c06ed345.png">
 
