@@ -17,6 +17,7 @@
 ## Methods and Results
 ### Simple Wiki functions 
 #### **wiki.py**
+
 This code defines a function named search_wiki that searches Wikipedia for a given query and returns a summary of the relevant article. The function includes some error handling to deal with situations where the query is ambiguous or no page is found.
 
 The code then enters a loop that repeatedly prompts the user for input, calls search_wiki with the input as an argument, and prints the question and response. The loop continues until the user enters the string "exit", at which point the loop terminates and the program ends.
@@ -28,6 +29,7 @@ To run the code, save it to a Python file (e.g. "wiki_search.py") and run it in 
 
 ### Wikipedia SmartBot
 **app.py**
+
 This code defines a Flask web application that searches Wikipedia for articles based on user input. The application has a form with several fields, including a search query, start and end dates, a category, a location, and a language. When the form is submitted, the application constructs a URL for the Wikipedia API based on the form fields and sends a GET request to that URL. It then processes the response to extract the search results and displays them on a web page.
 
 The index() function is the main view function for the application. It handles both GET and POST requests to the root URL ("/") and renders an HTML template called "index.html". If the request is a POST request (i.e. the user has submitted the form), the function extracts the form data from the request object and constructs a URL for the Wikipedia API based on the form data. It then sends a GET request to that URL using the requests module and processes the response to extract the search results. If the response is successful and contains search results, the function renders the "index.html" template with the search results and the original query. If the response is not successful or does not contain search results, the function renders the "index.html" template with an error message.
@@ -40,6 +42,7 @@ To run the code, save it to a Python file (e.g. "wiki_search_app.py") and run it
 
 ### WikiChat Bot
 **chat.py**
+
 This code defines a Flask web application that provides a simple chatbot interface that uses Wikipedia to respond to user input. The application has a single HTML page called "chat.html" that includes a text input field for the user to enter a message and a button to submit the message. When the button is clicked, the application sends a POST request to the "/message" endpoint with the user's message as the request body. The application then processes the message by attempting to get a summary from Wikipedia and returning that summary as a JSON response. If the message is not recognized, the application returns an error message.
 
 The index() function is the view function for the root URL ("/") and simply renders the "chat.html" template.
@@ -53,6 +56,7 @@ To run the code, save it to a Python file (e.g. "wiki_chatbot.py") and run it in
 
 ### Searcher AI Bot
 **search.py**
+
 This code defines a Flask web application that searches Wikipedia for articles based on user input. The application has a single HTML page called "general.html" that includes a form with a single input field for the user to enter a search query. When the form is submitted, the application constructs a URL for the Wikipedia API based on the query and sends a GET request to that URL. It then processes the response to extract the search results and displays them on a web page.
 
 The index() function is the main view function for the application. It handles both GET and POST requests to the root URL ("/") and renders the "general.html" template. If the request is a POST request (i.e. the user has submitted the form), the function extracts the search query from the form data and constructs a URL for the Wikipedia API based on the query. It then sends a GET request to that URL using the requests module and processes the response to extract the search results. If the response is successful and contains search results, the function renders the "general.html" template with the search results and the original query. If the response is not successful or does not contain search results, the function renders the "general.html" template with an error message.
