@@ -1,8 +1,16 @@
 # Final Project: Wikipedia AI Bot
 ## Goals
+We aim to create a Wikipedia AI bot that performs four main functions: wiki.py, search.py, chat.py, and app.py. These functions are designed to provide users with a seamless experience in accessing information from Wikipedia.
 
+The first function, wiki.py, allows users to access information directly from the terminal. It presents information in an interactive manner, displaying paragraphs of text to provide a summary of the requested topic.
 
+The second function, search.py, is focused on helping users quickly search for the main summary of a particular concept or definition. It is designed to simplify the search process by presenting only the most relevant information.
 
+The third function, chat.py, aims to function as a chatbot that communicates with users via messages. It is designed to provide more detailed information on a given topic within 1-3 paragraphs, responding to users in a conversational manner.
+
+Finally, app.py is designed for more accurate filtering, such as by date, location, category, and language. This allows users to find more specific information that meets their needs. Once filtered, the bot will present the relevant Wikipedia page directly to the user.
+
+We believe that our Wikipedia AI bot will provide users with a seamless experience in accessing information from Wikipedia, making it easier and more efficient for them to learn and discover new things.
 
 ## Diagram
 
@@ -17,10 +25,10 @@
 3. Install the required Python modules. The four Python files require different modules, so you will need to install them separately. You can install the required modules using the following commands:
 
 ```
-`pip install wikipedia`
-`pip install Flask requests`
-`pip install Flask wikipedia`
-`pip install Flask requests`
+pip install wikipedia
+pip install Flask requests
+pip install Flask wikipedia
+pip install Flask requests
 ```
 
 4. Run the Python files. You can run each Python file by typing python filename.py in the command prompt or terminal window. For example, to run wiki.py, you would type python wiki.py and press Enter. This will start the program, and you will be prompted to enter a search query.
@@ -84,6 +92,10 @@ To run the code, save it to a Python file (e.g. "wiki_search_app.py") and run it
 
 ## Discusiions
 ### limitations
+Although these applications provide useful functionality, they have some limitations. One limitation is that they rely solely on Wikipedia for information. This means that they may not always provide the most accurate or complete information, and they may not be able to answer all types of questions. Additionally, some of the applications have limited functionality, such as chat.py, which can only respond to messages with Wikipedia summaries.
+
 ### Future Work
+There are several ways in which these applications could be improved or expanded in the future. One possibility is to incorporate other sources of information in addition to Wikipedia, such as other online encyclopedias or databases. Another possibility is to use machine learning algorithms to improve the accuracy and completeness of the information provided by these applications. Additionally, the chatbot interface could be expanded to support more advanced natural language processing techniques, allowing it to understand and respond to a wider range of user queries. Overall, there is a lot of potential for future development and improvement of these applications.
 
 ## Conclusions
+To sum up, the four Python scripts provided above demonstrate the versatility and usefulness of Wikipedia as a source of information. They provide different ways to search and retrieve information from Wikipedia, ranging from a simple command-line interface to a more sophisticated web-based chatbot and AI search engine. Each of these scripts has its own unique features, strengths, and limitations, making them suitable for different use cases and audiences.
