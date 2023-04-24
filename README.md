@@ -16,6 +16,13 @@
 ## How to Use
 
 ### Simple Wiki functions 
+#### *wiki.py*
+This code defines a function named search_wiki that searches Wikipedia for a given query and returns a summary of the relevant article. The function includes some error handling to deal with situations where the query is ambiguous or no page is found.
+
+The code then enters a loop that repeatedly prompts the user for input, calls search_wiki with the input as an argument, and prints the question and response. The loop continues until the user enters the string "exit", at which point the loop terminates and the program ends.
+
+To run the code, save it to a Python file (e.g. "wiki_search.py") and run it in the terminal by navigating to the directory containing the file and typing "python wiki_search.py" (without quotes) and then press enter. The program will begin running and prompt the user for input.
+
 <img width="1013" alt="Screen Shot 2023-04-23 at 7 48 01 PM" src="https://user-images.githubusercontent.com/112274822/233873972-42810f3c-1ebd-4237-a62a-931fb41f1813.png">
 <img width="1016" alt="Screen Shot 2023-04-23 at 7 48 17 PM" src="https://user-images.githubusercontent.com/112274822/233873983-f4cf6373-79c6-40ff-b5de-076561e36604.png">
 
