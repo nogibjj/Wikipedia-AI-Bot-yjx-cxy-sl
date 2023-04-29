@@ -88,6 +88,19 @@ To run the code, save it to a Python file (e.g. "wiki_search_app.py") and run it
 
 <img width="1338" alt="Screen Shot 2023-04-23 at 7 51 16 PM" src="https://user-images.githubusercontent.com/112274822/233873832-82e4a91d-3a42-41ee-b4f7-077a2a54f546.png">
 
+## Deployment and load test
+### Deployment on the cloud
+We then deployed the app on the **AWS App Runner**,so that the websites are able to be accessible to public.We used separated repositories to deploy
+
+### Load test
+We used `locust` to test the scalability of the websites. Define the user behavior in locustfile.py, then run `locust` and visit http://localhost:8089 to start the test. And our websites are able to scale to 1000+ request.
+```Python
+pip3 install locust
+# after creating a locustfile.py
+locust
+```
+You can find more information about `locust` here: [Locust website](https://docs.locust.io/en/stable/what-is-locust.html)
+
 ## Discusiions
 ### limitations
 Although these applications provide useful functionality, they have some limitations. One limitation is that they rely solely on Wikipedia for information. This means that they may not always provide the most accurate or complete information, and they may not be able to answer all types of questions. Additionally, some of the applications have limited functionality, such as chat.py, which can only respond to messages with Wikipedia summaries.
