@@ -117,6 +117,47 @@ You can find more information about `locust` here: [Locust website](https://docs
 
 <img width="1505" alt="Screen Shot 2023-04-29 at 11 53 38 PM" src="https://user-images.githubusercontent.com/112274822/235334772-16f9aa50-9b32-4f7d-943a-d6de33d336fa.png">
 
+## Data Preprocessing Roadmap
+
+1. **Data Collection**
+   - Gather data from various sources (databases, APIs, web scraping, etc.)
+
+2. **Data Cleaning**
+   - Handle missing values
+     - Remove records with missing values
+     - Impute missing values (mean, median, mode, or other methods)
+   - Remove duplicates
+   - Correct inconsistencies or errors in the data
+
+3. **Data Transformation**
+   - Feature scaling
+     - Min-Max scaling
+     - Standardization (Z-score normalization)
+   - Feature encoding
+     - One-hot encoding (for categorical variables)
+     - Label encoding (for ordinal variables)
+   - Feature engineering
+     - Create new features based on existing ones
+     - Combine features (e.g., polynomial features)
+     - Apply transformations (e.g., logarithmic, exponential)
+
+4. **Data Reduction**
+   - Feature selection
+     - Filter methods (e.g., correlation, mutual information)
+     - Wrapper methods (e.g., forward, backward, or recursive feature elimination)
+     - Embedded methods (e.g., LASSO, Ridge regression)
+   - Dimensionality reduction
+     - Principal Component Analysis (PCA)
+     - Linear Discriminant Analysis (LDA)
+     - t-Distributed Stochastic Neighbor Embedding (t-SNE)
+     - Autoencoders
+
+5. **Data Splitting**
+   - Divide the data into training, validation, and test sets
+   - Use cross-validation techniques (e.g., k-fold, stratified k-fold)
+
+<img width="761" alt="Screen Shot 2023-04-30 at 6 44 05 PM" src="https://user-images.githubusercontent.com/112274822/235379547-90a252dc-500b-458b-be04-6ae305e3a2bf.png">
+
 ## Discusiions
 ### limitations
 Although these applications provide useful functionality, they have some limitations. One limitation is that they rely solely on Wikipedia for information. This means that they may not always provide the most accurate or complete information, and they may not be able to answer all types of questions. Additionally, some of the applications have limited functionality, such as chat.py, which can only respond to messages with Wikipedia summaries.
