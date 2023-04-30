@@ -178,7 +178,7 @@ You can find more information about `locust` here: [Locust website](https://docs
 
 <img width="777" alt="Screen Shot 2023-04-30 at 6 56 31 PM" src="https://user-images.githubusercontent.com/112274822/235379810-91277836-03b1-4022-b543-612e9cf8190e.png">
 
-4. **Interpret the model(s**
+4. **Interpret the model(s)**
    - Understand the importance of features in the model.
    - Analyze the decision-making process of the model, if possible.
    - Use techniques like SHAP (SHapley Additive exPlanations) values or LIME (Local Interpretable Model-agnostic Explanations) to explain model predictions.
