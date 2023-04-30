@@ -15,7 +15,7 @@ Finally, app.py is designed for more accurate filtering, such as by date, locati
 We believe that our Wikipedia AI bot will provide users with a seamless experience in accessing information from Wikipedia, making it easier and more efficient for them to learn and discover new things.
 
 ## Diagram
-<img width="539" alt="Screen Shot 2023-04-23 at 8 53 09 PM" src="https://user-images.githubusercontent.com/112274822/233877015-96ecb553-20fd-4b4d-8ffe-55debf3e5b83.png">
+<img width="728" alt="Screen Shot 2023-04-30 at 3 14 13 PM" src="https://user-images.githubusercontent.com/112274822/235372060-c8beff8c-eaa8-4f36-a4c6-54bccb7a5d8d.png">
 
 ## Demo Link
 
