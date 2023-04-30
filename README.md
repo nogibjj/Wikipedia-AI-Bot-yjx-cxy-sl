@@ -100,6 +100,7 @@ You can find them here:
 - [wiki-bot-search](https://github.com/LiuSuen/wiki-bot-search/tree/main): https://hq9ftb23ie.us-east-1.awsapprunner.com
 ### Load test
 We used `locust` to test the scalability of the websites. Define the user behavior in locustfile.py, then run `locust` and visit http://localhost:8089 to start the test. And our websites are able to scale to 1000+ request.
+
 <img width="999" alt="Screen Shot 2023-04-29 at 11 53 51 PM" src="https://user-images.githubusercontent.com/112274822/235334764-b7adecb3-3115-45fb-8e91-11a48fa81710.png">
 
 ```Python
