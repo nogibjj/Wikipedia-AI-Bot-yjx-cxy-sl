@@ -92,9 +92,9 @@ To run the code, save it to a Python file (e.g. "wiki_search_app.py") and run it
 ### Deployment on the cloud
 We then deployed the app on the **AWS App Runner**, so that the websites are able to be accessible to public. We used separated repositories for deployment.  
 You can find them here:  
-- [wiki-bot-app](https://github.com/LiuSuen/wiki-bot-app/tree/main)
-- [wiki-bot-chat](https://github.com/LiuSuen/wiki-bot-chat/tree/main)
-- [wiki-bot-search](https://github.com/LiuSuen/wiki-bot-search/tree/main)
+- [wiki-bot-app](https://github.com/LiuSuen/wiki-bot-app/tree/main): https://yp2tum2pjq.us-east-1.awsapprunner.com
+- [wiki-bot-chat](https://github.com/LiuSuen/wiki-bot-chat/tree/main): https://vqmeb2ndjf.us-east-1.awsapprunner.com
+- [wiki-bot-search](https://github.com/LiuSuen/wiki-bot-search/tree/main): https://hq9ftb23ie.us-east-1.awsapprunner.com
 ### Load test
 We used `locust` to test the scalability of the websites. Define the user behavior in locustfile.py, then run `locust` and visit http://localhost:8089 to start the test. And our websites are able to scale to 1000+ request.
 ```Python
