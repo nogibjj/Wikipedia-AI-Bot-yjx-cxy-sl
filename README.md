@@ -91,18 +91,25 @@ To run the code, save it to a Python file (e.g. "wiki_search_app.py") and run it
 ## Deployment and load test
 ### Deployment on the cloud
 We then deployed the app on the **AWS App Runner**, so that the websites are able to be accessible to public. We used separated repositories for deployment.  
+
+<img width="1437" alt="Screen Shot 2023-04-29 at 11 54 16 PM" src="https://user-images.githubusercontent.com/112274822/235334756-70bef80e-b11e-4689-94af-d3d7b65f850a.png">
+
 You can find them here:  
 - [wiki-bot-app](https://github.com/LiuSuen/wiki-bot-app/tree/main): https://yp2tum2pjq.us-east-1.awsapprunner.com
 - [wiki-bot-chat](https://github.com/LiuSuen/wiki-bot-chat/tree/main): https://vqmeb2ndjf.us-east-1.awsapprunner.com
 - [wiki-bot-search](https://github.com/LiuSuen/wiki-bot-search/tree/main): https://hq9ftb23ie.us-east-1.awsapprunner.com
 ### Load test
 We used `locust` to test the scalability of the websites. Define the user behavior in locustfile.py, then run `locust` and visit http://localhost:8089 to start the test. And our websites are able to scale to 1000+ request.
+<img width="999" alt="Screen Shot 2023-04-29 at 11 53 51 PM" src="https://user-images.githubusercontent.com/112274822/235334764-b7adecb3-3115-45fb-8e91-11a48fa81710.png">
+
 ```Python
 pip3 install locust
 # after creating a locustfile.py
 locust
 ```
 You can find more information about `locust` here: [Locust website](https://docs.locust.io/en/stable/what-is-locust.html)
+
+<img width="1505" alt="Screen Shot 2023-04-29 at 11 53 38 PM" src="https://user-images.githubusercontent.com/112274822/235334772-16f9aa50-9b32-4f7d-943a-d6de33d336fa.png">
 
 ## Discusiions
 ### limitations
