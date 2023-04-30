@@ -188,7 +188,7 @@ You can find more information about `locust` here: [Locust website](https://docs
 
 <img width="1505" alt="Screen Shot 2023-04-29 at 11 53 38 PM" src="https://user-images.githubusercontent.com/112274822/235334772-16f9aa50-9b32-4f7d-943a-d6de33d336fa.png">
 
-## Discusiions
+## Discussions
 ### limitations
 Although these applications provide useful functionality, they have some limitations. One limitation is that they rely solely on Wikipedia for information. This means that they may not always provide the most accurate or complete information, and they may not be able to answer all types of questions. Additionally, some of the applications have limited functionality, such as chat.py, which can only respond to messages with Wikipedia summaries.
 
