@@ -155,7 +155,7 @@ You can find more information about `locust` here: [Locust website](https://docs
    - Divide the data into training, validation, and test sets
    - Use cross-validation techniques (e.g., k-fold, stratified k-fold)
 
-<img width="761" alt="Screen Shot 2023-04-30 at 6 44 05 PM" src="https://user-images.githubusercontent.com/112274822/235379547-90a252dc-500b-458b-be04-6ae305e3a2bf.png">
+<img width="395" alt="Screen Shot 2023-04-30 at 6 53 04 PM" src="https://user-images.githubusercontent.com/112274822/235379690-07b561c9-78ed-45d7-a398-e849a22ed134.png">
 
 ## Road map for machine learning experiments
 1. **Select the model(s)**
