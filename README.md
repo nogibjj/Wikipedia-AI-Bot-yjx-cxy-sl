@@ -15,10 +15,10 @@ Finally, app.py is designed for more accurate filtering, such as by date, locati
 We believe that our Wikipedia AI bot will provide users with a seamless experience in accessing information from Wikipedia, making it easier and more efficient for them to learn and discover new things.
 
 ## Diagram
-<img width="727" alt="Screen Shot 2023-04-30 at 3 22 37 PM" src="https://user-images.githubusercontent.com/112274822/235372399-a7c2cada-5b61-4622-98e9-ad137651c20f.png">
+<img width="718" alt="Screen Shot 2023-04-30 at 7 58 19 PM" src="https://user-images.githubusercontent.com/112274822/235382137-6bf279e2-5201-4c5c-b58b-e383e5f8d5d2.png">
 
 ## Demo Link
-
+https://prodduke.sharepoint.com/:v:/r/sites/IDS-721-Spring-2023/Shared%20Documents/Final%20Project/final.mp4?csf=1&web=1&e=gH9Yeh
 
 ## How to Use
 1. Save each file to a directory on your computer. You can save them to the same directory or to different directories, depending on your preference.
