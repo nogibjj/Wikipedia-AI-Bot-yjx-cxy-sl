@@ -42,6 +42,77 @@ pip install Flask requests
 
 <img width="859" alt="Screen Shot 2023-04-23 at 7 48 58 PM" src="https://user-images.githubusercontent.com/112274822/233873998-0bb48a06-2bc3-4085-bfc7-7511c06ed345.png">
 
+## Data Preprocessing Roadmap
+1. **Data Collection**
+   - Gather data from various sources (databases, APIs, web scraping, etc.)
+
+2. **Data Cleaning**
+   - Handle missing values
+     - Remove records with missing values
+     - Impute missing values (mean, median, mode, or other methods)
+   - Remove duplicates
+   - Correct inconsistencies or errors in the data
+
+3. **Data Transformation**
+   - Feature scaling
+     - Min-Max scaling
+     - Standardization (Z-score normalization)
+   - Feature encoding
+     - One-hot encoding (for categorical variables)
+     - Label encoding (for ordinal variables)
+   - Feature engineering
+     - Create new features based on existing ones
+     - Combine features (e.g., polynomial features)
+     - Apply transformations (e.g., logarithmic, exponential)
+
+4. **Data Reduction**
+   - Feature selection
+     - Filter methods (e.g., correlation, mutual information)
+     - Wrapper methods (e.g., forward, backward, or recursive feature elimination)
+     - Embedded methods (e.g., LASSO, Ridge regression)
+   - Dimensionality reduction
+     - Principal Component Analysis (PCA)
+     - Linear Discriminant Analysis (LDA)
+     - t-Distributed Stochastic Neighbor Embedding (t-SNE)
+     - Autoencoders
+
+5. **Data Splitting**
+   - Divide the data into training, validation, and test sets
+   - Use cross-validation techniques (e.g., k-fold, stratified k-fold)
+
+<img width="395" alt="Screen Shot 2023-04-30 at 6 53 04 PM" src="https://user-images.githubusercontent.com/112274822/235379690-07b561c9-78ed-45d7-a398-e849a22ed134.png">
+
+## Road map for machine learning experiments
+1. **Select the model(s)**
+   - Research and choose appropriate machine learning algorithms based on the problem type and dataset.
+   - Start with simple models (e.g., linear regression, logistic regression) and gradually move towards more complex models (e.g., SVM, random forests, neural networks).
+   - Consider using ensemble methods to combine multiple models.
+
+2. **Train and tune the model(s)**
+   - Train the selected models on the training dataset.
+   - Perform model selection using cross-validation or other validation techniques.
+   - Tune the model hyperparameters using techniques like grid search, random search, or Bayesian optimization.
+   - Evaluate the performance of the models on the validation dataset using appropriate evaluation metrics (e.g., accuracy, F1-score, mean squared error).
+
+<img width="790" alt="Screen Shot 2023-04-30 at 6 55 52 PM" src="https://user-images.githubusercontent.com/112274822/235379820-d65f265b-b6fe-4a1a-97b9-9236f6fa5cbe.png">
+
+3. **Evaluate the model(s)**
+   - Assess the performance of the final model(s) on the test dataset.
+   - Compare the results to the baseline model or benchmarks.
+   - Analyze the errors made by the model and identify areas for improvement.
+
+<img width="777" alt="Screen Shot 2023-04-30 at 6 56 31 PM" src="https://user-images.githubusercontent.com/112274822/235379810-91277836-03b1-4022-b543-612e9cf8190e.png">
+
+4. **Interpret the model(s)**
+   - Understand the importance of features in the model.
+   - Analyze the decision-making process of the model, if possible.
+   - Use techniques like SHAP (SHapley Additive exPlanations) values or LIME (Local Interpretable Model-agnostic Explanations) to explain model predictions.
+
+5. **Deploy model**
+   - Once satisfied with the model's performance, deploy it to a production environment.
+   - Develop an API or integration to allow other systems to access the model.
+   - Monitor the model's performance in the production environment and make updates as necessary.
+   
 ## Methods and Results
 ### Simple Wiki functions 
 #### **wiki.py**
@@ -116,77 +187,6 @@ locust
 You can find more information about `locust` here: [Locust website](https://docs.locust.io/en/stable/what-is-locust.html)
 
 <img width="1505" alt="Screen Shot 2023-04-29 at 11 53 38 PM" src="https://user-images.githubusercontent.com/112274822/235334772-16f9aa50-9b32-4f7d-943a-d6de33d336fa.png">
-
-## Data Preprocessing Roadmap
-1. **Data Collection**
-   - Gather data from various sources (databases, APIs, web scraping, etc.)
-
-2. **Data Cleaning**
-   - Handle missing values
-     - Remove records with missing values
-     - Impute missing values (mean, median, mode, or other methods)
-   - Remove duplicates
-   - Correct inconsistencies or errors in the data
-
-3. **Data Transformation**
-   - Feature scaling
-     - Min-Max scaling
-     - Standardization (Z-score normalization)
-   - Feature encoding
-     - One-hot encoding (for categorical variables)
-     - Label encoding (for ordinal variables)
-   - Feature engineering
-     - Create new features based on existing ones
-     - Combine features (e.g., polynomial features)
-     - Apply transformations (e.g., logarithmic, exponential)
-
-4. **Data Reduction**
-   - Feature selection
-     - Filter methods (e.g., correlation, mutual information)
-     - Wrapper methods (e.g., forward, backward, or recursive feature elimination)
-     - Embedded methods (e.g., LASSO, Ridge regression)
-   - Dimensionality reduction
-     - Principal Component Analysis (PCA)
-     - Linear Discriminant Analysis (LDA)
-     - t-Distributed Stochastic Neighbor Embedding (t-SNE)
-     - Autoencoders
-
-5. **Data Splitting**
-   - Divide the data into training, validation, and test sets
-   - Use cross-validation techniques (e.g., k-fold, stratified k-fold)
-
-<img width="395" alt="Screen Shot 2023-04-30 at 6 53 04 PM" src="https://user-images.githubusercontent.com/112274822/235379690-07b561c9-78ed-45d7-a398-e849a22ed134.png">
-
-## Road map for machine learning experiments
-1. **Select the model(s)**
-   - Research and choose appropriate machine learning algorithms based on the problem type and dataset.
-   - Start with simple models (e.g., linear regression, logistic regression) and gradually move towards more complex models (e.g., SVM, random forests, neural networks).
-   - Consider using ensemble methods to combine multiple models.
-
-2. **Train and tune the model(s)**
-   - Train the selected models on the training dataset.
-   - Perform model selection using cross-validation or other validation techniques.
-   - Tune the model hyperparameters using techniques like grid search, random search, or Bayesian optimization.
-   - Evaluate the performance of the models on the validation dataset using appropriate evaluation metrics (e.g., accuracy, F1-score, mean squared error).
-
-<img width="790" alt="Screen Shot 2023-04-30 at 6 55 52 PM" src="https://user-images.githubusercontent.com/112274822/235379820-d65f265b-b6fe-4a1a-97b9-9236f6fa5cbe.png">
-
-3. **Evaluate the model(s)**
-   - Assess the performance of the final model(s) on the test dataset.
-   - Compare the results to the baseline model or benchmarks.
-   - Analyze the errors made by the model and identify areas for improvement.
-
-<img width="777" alt="Screen Shot 2023-04-30 at 6 56 31 PM" src="https://user-images.githubusercontent.com/112274822/235379810-91277836-03b1-4022-b543-612e9cf8190e.png">
-
-4. **Interpret the model(s)**
-   - Understand the importance of features in the model.
-   - Analyze the decision-making process of the model, if possible.
-   - Use techniques like SHAP (SHapley Additive exPlanations) values or LIME (Local Interpretable Model-agnostic Explanations) to explain model predictions.
-
-5. **Deploy model**
-   - Once satisfied with the model's performance, deploy it to a production environment.
-   - Develop an API or integration to allow other systems to access the model.
-   - Monitor the model's performance in the production environment and make updates as necessary.
 
 ## Discusiions
 ### limitations
