@@ -169,10 +169,14 @@ You can find more information about `locust` here: [Locust website](https://docs
    - Tune the model hyperparameters using techniques like grid search, random search, or Bayesian optimization.
    - Evaluate the performance of the models on the validation dataset using appropriate evaluation metrics (e.g., accuracy, F1-score, mean squared error).
 
+<img width="790" alt="Screen Shot 2023-04-30 at 6 55 52 PM" src="https://user-images.githubusercontent.com/112274822/235379820-d65f265b-b6fe-4a1a-97b9-9236f6fa5cbe.png">
+
 3. **Evaluate the model(s)**
    - Assess the performance of the final model(s) on the test dataset.
    - Compare the results to the baseline model or benchmarks.
    - Analyze the errors made by the model and identify areas for improvement.
+
+<img width="777" alt="Screen Shot 2023-04-30 at 6 56 31 PM" src="https://user-images.githubusercontent.com/112274822/235379810-91277836-03b1-4022-b543-612e9cf8190e.png">
 
 4. **Interpret the model(s**
    - Understand the importance of features in the model.
