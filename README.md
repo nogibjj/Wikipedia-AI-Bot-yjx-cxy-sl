@@ -1,7 +1,5 @@
 # Final Project: Wikipedia AI Bot
-### [*Option B: Pick Project from Practical MLOPs Book-Appendix E. Building a Technical Portfolio for MLOps*] (https://www.oreilly.com/library/view/practical-mlops/9781098103002/app05.html#idm45917434442872)
-
-[Option B: Pick Project from Practical MLOPs Book-Appendix E. Building a Technical Portfolio for MLOps](https://www.oreilly.com/library/view/practical-mlops/9781098103002/app05.html#idm45917434442872)
+### [*Option B: Pick Project from Practical MLOPs Book-Appendix E. Building a Technical Portfolio for MLOps*](https://www.oreilly.com/library/view/practical-mlops/9781098103002/app05.html#idm45917434442872)
 
 ## Goals
 We aim to create a Wikipedia AI bot that performs four main functions: wiki.py, search.py, chat.py, and app.py. These functions are designed to provide users with a seamless experience in accessing information from Wikipedia.
