@@ -187,6 +187,7 @@ locust
 You can find more information about `locust` here: [Locust website](https://docs.locust.io/en/stable/what-is-locust.html)
 
 <img width="1505" alt="Screen Shot 2023-04-29 at 11 53 38 PM" src="https://user-images.githubusercontent.com/112274822/235334772-16f9aa50-9b32-4f7d-943a-d6de33d336fa.png">
+<img width="1440" alt="Load test" src="https://user-images.githubusercontent.com/84234596/235487657-8dd58ae1-2fd9-482a-9c7c-e69a23ee3e0d.png">
 
 ## Discussions
 ### Limitations
